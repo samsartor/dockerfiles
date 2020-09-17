@@ -5,6 +5,6 @@ FROM pandoc/latex:latest
 RUN apk --no-cache add make busybox
 
 # And some CTAN pacakages I need to build LUG slide decks
-tlmgr install beamertheme-metropolis
+RUN tlmgr install beamertheme-metropolis
 
 ENTRYPOINT []
