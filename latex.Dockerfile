@@ -1,5 +1,5 @@
 FROM pandoc/latex:latest
 
-RUN apk --no-cache add make bash
+RUN apk --no-cache add make busybox
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/sh"]
